@@ -6,7 +6,7 @@
         <title>Formulario de registro</title>
     </head>
     <body>
-        <form action="/regstro" method="POST">
+        <form action="/registro" method="POST">
             <div>
                 <label for="nombre">Nombre:</label>
                 <input type="text" id="nombre" name="nombre" required/>
@@ -45,12 +45,18 @@
             </div>
             <br>
             <div>
+                <label for="boletin">Quiero recibir información!</label>
+                <input type="checkbox" name="boletin" id="boletin">
+            </div>
+            <br>
+            <div>
                 <label for="intereses">Tus intereses:</label><br>
                 <select name="intereses" id="intereses" size="3" multiple>
                     <option value="Musica">Musica</option>
                     <option value="Cine">Cine</option>
                     <option value="Arte">Arte</option>                        
                     <option value="Danza">Danza</option>                        
+                    <option value="Danza">Literatura</option>                        
                 </select>
             </div>
             <br>
@@ -61,4 +67,7 @@
             <button type="submit">Registrarse</button>          
         </form>
     </body>
+    <footer>
+        <h5>Realizado por Francisco Valencia</h5>
+    </footer>
 </html>
