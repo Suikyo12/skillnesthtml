@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Formulario de registro</title>
+    </head>
+    <body>
+        <form action="/regstro" method="POST">
+            <div>
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" required/>
+            </div>
+            <br>
+            <div>
+                <label for="apellido">Apellido:</label>
+                <input type="text" id="apellido" name="apellido" required/>
+            </div>
+            <br>
+            <div>
+                <label for="correo">Correo Electrónico:</label>
+                <input type="email" name="correo" placeholder="Ingresa tu Correo electrónico"/>
+            </div>
+            <br>
+            <div>
+                <label for="contrasena">Contrasena: </label>
+                <input type="password" name="contrasena" placeholder="Ingresa tu contraseña: "/>
+            </div>
+            <br>
+            <div>
+                <label for="confirmar_contrasena">Confirmar contrasena: </label>
+                <input type="password" id="confirmar-contrasena" name="confirmar-contrasena" required/>
+            </div>
+            <br>
+            <div>
+                <label for="fecha_naci">Fecha de nacimiento: </label>
+                <input type="date" id="fecha_naci" name="fecha_naci" required/>
+            </div>
+            <br>
+            <div>
+                <label for="genero">Género:</label>
+                <input type="radio" name="genero" value="masculino"> Masculino
+                <input type="radio" name="genero" value="femenino"> Femenino
+                <input type="radio" name="genero" value="femenino"> No Binario
+            </div>
+            <br>
+            <div>
+                <label for="intereses">Tus intereses:</label><br>
+                <select name="intereses" id="intereses" size="3" multiple>
+                    <option value="Musica">Musica</option>
+                    <option value="Cine">Cine</option>
+                    <option value="Arte">Arte</option>                        
+                    <option value="Danza">Danza</option>                        
+                </select>
+            </div>
+            <br>
+            <div>
+                <textarea rows="3" cols="30" placeholder="Una descripción de mi "></textarea>
+            </div>
+            <br>
+            <button type="submit">Registrarse</button>          
+        </form>
+    </body>
+</html>
