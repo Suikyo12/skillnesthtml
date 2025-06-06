@@ -1,38 +1,45 @@
 <!DOCTYPE html>
 <html lang="es">
   <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>FOOD HERO</title>
   </head>
   <body>
     <header>
-        <h1>FOOD HERO</h1>
-        <img src="./pagina1/imagenes/Designer.png" alt="logo" style="width: 20%; height: 20%;">
+      <h1>FOOD HERO</h1>
+      <img
+        src="./pagina1/assets/img/Designer.png"
+        alt="logo"
+        style="width: 20%; height: 20%"
+      />
     </header>
+    <nav>
     <ul>
-        <li><a href="https://www.google.cl">¿Como Funciona?</a></li>
-        <li><a href="https://www.google.cl">Restaurantes</a></li>
-        <li><a href="https://www.google.cl">Reservar</a></li>
-        <li><a href="https://www.google.cl">Contacto</a></li>
+      <li><a href="https://www.google.cl">¿Como Funciona?</a></li>
+      <li><a href="https://www.google.cl">Restaurantes</a></li>
+      <li><a href="https://www.google.cl">Reservar</a></li>
+      <li><a href="https://www.google.cl">Contacto</a></li>
     </ul>
+    </nav>
     <h2>¿Como funciona?</h2>
     <div>
-        <p>FOOD HERO conecta restaurantes con excedentes de comida con personas interesadas en adquirir alimentos a <br>
-          precios reducidos. Los restaurantes publican sus ofertas y los usuarios pueden reservar en línea y recoger <br>
-          a horarios definidos.
-        </p>
+      <p>
+        FOOD HERO conecta restaurantes con excedentes de comida con personas
+        interesadas en adquirir alimentos a <br />
+        precios reducidos. Los restaurantes publican sus ofertas y los usuarios
+        pueden reservar en línea y recoger <br />
+        a horarios definidos.
+      </p>
     </div>
     <ol>
       <ul>
         <li>Explora las ofertas de restaurantes</li>
         <li>Reserva tu comida favorita en línea</li>
         <li>Recógela en el horario indicado</li>
-        </ul>
+      </ul>
     </ol>
-    <h2>
-      Restaurantes Asociados
-    </h2>
+    <h2>Restaurantes Asociados</h2>
     <table border="1">
       <thead>
         <tr>
@@ -60,25 +67,50 @@
       </tbody>
     </table>
     <h2>Reservar Pedido</h2>
-    <label for="nombre">Nombre :</label>
-    <input type="text" name="nombre" id="nombre">
-    <label for="select_rest">Selecciona el restaurant :</label>
-    <select>
+    <form action="#" method="get">
+      <div>
+        <label for="nombre">Nombre :</label>
+        <input type="text" name="nombre" id="nombre" />
+      </div>
+      <label for="select_rest">Selecciona el restaurant :</label>
+      <select>
         <option>La Pizzería Feliz</option>
         <option>Comida China Express</option>
         <option>Panadería Dulce Hogar</option>
-    </select>
-    <label for="hora">Hora de Recogida :</label>
-    <input type="time" name="hora" id="hora"> <br>
-    <label for="comentarios">Comentarios Adicionales: </label>
-    <textarea name="comentarios" id="comentarios" rows="5" cols="33" placeholder="Ingresa acá detalles a considerar"></textarea>
-    <button>Reservar</button>
-    <p>Contacto: foodhero@ejemplo.com | Tel: +123 456 789</p>
-    <p>Siguenos: 
-    <a href="http://www.facebook.com">Facebook |</a>
-    <a href="http://www.linkedin.com">LinkedIn |</a>
-    <a href="http://www.github.com">GitHub</a>
-    </p>
+      </select>
+      <label for="hora">Hora de Recogida :</label>
+      <input type="time" name="hora" id="hora" /> <br />
+      <label for="comentarios">Comentarios Adicionales: </label>
+      <textarea
+        name="comentarios"
+        id="comentarios"
+        rows="5"
+        cols="33"
+        placeholder="Ingresa acá detalles a considerar"
+      ></textarea>
+      <button>Reservar</button>
+      <p>Contacto: foodhero@ejemplo.com | Tel: +123 456 789</p>
+      <p>
+        Siguenos:
+        <a href="http://www.facebook.com">Facebook |</a>
+        <a href="http://www.linkedin.com">LinkedIn |</a>
+        <a href="http://www.github.com">GitHub</a>
+      </p>
+      <label>Propina</label>
+      <input type="radio" name="propina" id="luca" value="luca" />
+      <label for="luca">$1000</label>
+      <input type="radio" name="propina" id="quina" value="quina" />
+      <label for="quina">$500</label>
+      <input type="radio" name="propina" id="doslucas" value="doslucas" />
+      <label for="doslucas">$2000</label>
+      <input type="radio" name="propina" id="cero" value="cero" />
+      <label for="cero">$0$</label>
+      <br />
+      <br />
+      <label for="acepto">Acepto todoo</label>
+      <input type="checkbox" name="acepto" id="acepto" />
+    </form>
   </body>
+  <br />
   <footer>© 2025 FOOD HERO - Todos los derechos reservados.</footer>
 </html>
