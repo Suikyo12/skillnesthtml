@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de registro</title>
+  </head>
+  <body>
+    <h1>¡Regístrate y únete a la comunidad! &#127988;</h1>
+    <form action="./registro.html" method="get">
+      <div>
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" name="nombre" value="" required>
+      </div>
+      <br>
+      <div>
+        <label for="apellido">Apellido:</label>
+        <input type="text" id="apellido" name="apellido" value="" required>
+      </div>
+      <br>
+      <div>
+        <label for="correo">Correo Electrónico:</label>
+        <input
+          type="email"
+          id="correo"
+          name="correo"
+          placeholder="Ingresa tu Correo electrónico">
+      </div>
+      <br>
+      <div>
+        <label for="contrasena">Contrasena: </label>
+        <input
+          type="password"
+          id="contrasena"
+          name="contrasena"
+          placeholder="Ingresa tu contraseña: "
+          required>
+      </div>
+      <br>
+      <div>
+        <label for="confirmar_contrasena">Confirmar contrasena: </label>
+        <input
+          type="password"
+          id="confirmar_contrasena"
+          name="confirmar_contrasena"
+          placeholder="confirma tu contraseña"
+          required>
+      </div>
+      <br>
+      <div>
+        <label for="fecha_naci">Fecha de nacimiento: </label>
+        <input type="date" id="fecha_naci" name="fecha_naci" required>
+      </div>
+      <br>
+      <div>
+        <p>Género:</p>
+        <input type="radio" id="masculino" name="genero" value="masculino">
+        <label for="masculino">Masculino</label>
+
+        <input type="radio" id="femenino" name="genero" value="femenino">
+        <label for="femenino">Femenino</label>
+
+        <input type="radio" id="no_binario" name="genero" value="no_binario">
+        <label for="no_binario">No Binario</label>
+      </div>
+      <br>
+      <div>
+        <label for="boletin">Quiero recibir información!</label>
+        <input type="checkbox" name="boletin" id="boletin">
+      </div>
+      <br>
+      <div>
+        <label for="intereses">Tus intereses:</label><br>
+        <select name="intereses" id="intereses" size="3" multiple>
+          <option value="Musica">Musica</option>
+          <option value="Cine">Cine</option>
+          <option value="Arte">Arte</option>
+          <option value="Danza">Danza</option>
+          <option value="Literatura">Literatura</option>
+        </select>
+      </div>
+      <br>
+      <div>
+        <label for="descripcion">Una descripción de mí:</label><br>
+        <textarea
+          id="descripcion"
+          name="descripcion"
+          rows="3"
+          cols="30"
+          placeholder="Una descripción de mí"
+        ></textarea>
+      </div>
+      <br>
+      <button type="submit">Registrarse</button>
+    </form>
+    <footer>
+      <h5>Realizado por Francisco Valencia</h5>
+    </footer>
+  </body>
+</html>
